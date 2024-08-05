@@ -1,7 +1,9 @@
+import AuctionDetail from './pages/AuctionDetail';
+
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <AuctionDetail />
     </>
   );
 }
