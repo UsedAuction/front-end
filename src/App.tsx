@@ -1,7 +1,13 @@
+import Page from './router/router';
+import Nav from './components/layout/Nav';
+import Footer from './components/layout/Footer';
+
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Nav />
+      <Page />
+      <Footer />
     </>
   );
 }
