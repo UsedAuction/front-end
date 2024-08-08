@@ -5,6 +5,7 @@ import { extendTheme } from '@chakra-ui/react';
 export const customTheme = extendTheme({
   breakpoints: {
     sm: '30em', // 480px
+    sm2: '37.5em', // 600px
     md: '48em', // 768px
     lg: '64em', // 1024px
     xl: '80em', // 1280px

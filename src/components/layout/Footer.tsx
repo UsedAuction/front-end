@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="hidden w-full p-10 lg:block">
         <div className="flex items-center justify-between">
           <div className="text-3xl font-bold min-w-[200px]">Logo</div>
-          <div className="flex items-center justify-between font-bold min-w-[550px]">
+          <div className="flex items-center justify-between min-w-[550px] underline">
             <Link>Link One</Link>
             <Link>Link Two</Link>
             <Link>Link Three</Link>
@@ -39,7 +39,7 @@ export default function Footer() {
       <div className="px-4 py-6 lg:hidden">
         <Menu matchWidth>
           {({ isOpen }) => (
-            <>
+            <div className="relative z-50">
               <MenuButton
                 isActive={isOpen}
                 as={Button}
@@ -52,7 +52,7 @@ export default function Footer() {
               >
                 LINKS
               </MenuButton>
-              <MenuList>
+              <MenuList position={'relative'} zIndex={'40'} fontSize={'0.9rem'}>
                 <MenuItem as="a" href="#">
                   Link One
                 </MenuItem>
@@ -72,7 +72,7 @@ export default function Footer() {
                   Link Six
                 </MenuItem>
               </MenuList>
-            </>
+            </div>
           )}
         </Menu>
         <Menu matchWidth>
@@ -90,7 +90,7 @@ export default function Footer() {
               >
                 ABOUT
               </MenuButton>
-              <MenuList>
+              <MenuList position={'relative'} zIndex={'50'} fontSize={'0.9rem'}>
                 <MenuItem>© 2023 Relume. All rights reserved.</MenuItem>
                 <MenuItem as="a" href="#">
                   Privacy Policy
@@ -120,7 +120,7 @@ export default function Footer() {
               >
                 CONTECT
               </MenuButton>
-              <MenuList>
+              <MenuList position={'relative'} zIndex={'50'} fontSize={'0.9rem'}>
                 <MenuItem as="a" href="https://www.facebook.com/">
                   facebook
                 </MenuItem>
