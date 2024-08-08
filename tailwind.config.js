@@ -7,7 +7,26 @@ export default {
         '18px': '18px',
         '16px': '16px',
       },
+      aspectRatio: {
+        '4/5': '4/5',
+      },
+      width: {
+        '480px': '480px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar': {
+          /* firefox */
+          'scrollbar-width': 'none',
+          /* safari and chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        },
+      });
+    },
+  ],
 };
