@@ -1,17 +1,21 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { memo } from 'react';
-import Error from '../pages/Error';
+import { createBrowserRouter } from 'react-router-dom';
+import Layout from '../components/layout/Layout';
 import Home from '../pages/Home';
+import AuctionDetail from '../pages/AuctionDetail';
 
-const Page = (): JSX.Element => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
-
-export default memo(Page);
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '',
+        element: <Home />,
+      },
+      {
+        path: '/detail',
+        element: <AuctionDetail />,
+      },
+    ],
+  },
+]);

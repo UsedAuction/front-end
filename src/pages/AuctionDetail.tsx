@@ -18,7 +18,7 @@ import { RxChevronRight } from 'react-icons/rx';
 
 const imageList = [1, 2, 3, 4, 5, 6];
 
-const AuctionDetail = () => {
+export default function AuctionDetail() {
   const [imageSet, setImageSet] = useState(1);
 
   const handleClick = (ele: number) => {
@@ -29,7 +29,7 @@ const AuctionDetail = () => {
     <div className="px-6 max-w-screen-xl flex flex-col mx-auto text-xm mb-24">
       <Breadcrumb className="py-4 px-6" spacing="8px" separator={<RxChevronRight />}>
         <BreadcrumbItem>
-          <BreadcrumbLink href="#">전체</BreadcrumbLink>
+          <BreadcrumbLink href="/">전체</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
           <BreadcrumbLink href="#">카테고리</BreadcrumbLink>
@@ -257,6 +257,4 @@ const AuctionDetail = () => {
       </div>
     </div>
   );
-};
-
-export default AuctionDetail;
+}
