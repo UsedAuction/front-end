@@ -3,6 +3,7 @@ import { RxTextAlignJustify } from 'react-icons/rx';
 import SigninModal from '../main/modals/SigninModal';
 import SignupModal from '../main/modals/SignupModal';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   const signinDisclosure = useDisclosure();
@@ -29,7 +30,9 @@ export default function Nav() {
         initialRef={initialRef}
       />
       <div className="flex justify-between items-center h-[90px] px-10">
-        <div className="text-3xl font-bold">Logo</div>
+        <Link to={'/'} className="text-3xl font-bold">
+          Logo
+        </Link>
         <RxTextAlignJustify className="lg:hidden" size={38} />
         <div className="hidden lg:block">
           <ul className="flex justify-between items-center font-semibold w-full gap-3">
