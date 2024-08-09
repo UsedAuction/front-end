@@ -6,7 +6,6 @@ import bannerImage3 from '../../../assets/image/banner/banner_image3.jpg';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import '../../../index.css';
-import { Flex } from '@chakra-ui/react';
 
 export default function Banner() {
   return (

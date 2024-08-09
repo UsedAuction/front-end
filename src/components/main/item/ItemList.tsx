@@ -36,8 +36,8 @@ export default function ItemList({ type }: ItemListProps) {
       templateColumns={{
         base: 'repeat(1, 1fr)',
         sm2: 'repeat(2, 1fr)',
-        md: 'repeat(3, 1fr)',
-        xl: 'repeat(5, 1fr)',
+        lg: 'repeat(3, 1fr)',
+        '2xl': 'repeat(5, 1fr)',
       }}
       gap={6}
       position={'relative'}

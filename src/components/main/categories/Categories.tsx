@@ -17,6 +17,16 @@ import kidult from '../../../assets/image/category/kidult.png';
 import computer from '../../../assets/image/category/computer.png';
 import book from '../../../assets/image/category/book.png';
 import baby from '../../../assets/image/category/baby.png';
+import goods from '../../../assets/image/category/goods.png';
+import food from '../../../assets/image/category/food.png';
+import beauty from '../../../assets/image/category/beauty.png';
+import pet from '../../../assets/image/category/pet.png';
+import bed from '../../../assets/image/category/bed.png';
+import sport from '../../../assets/image/category/sport.png';
+import house from '../../../assets/image/category/house.png';
+import plant from '../../../assets/image/category/plant.png';
+import ring from '../../../assets/image/category/ring.png';
+import more from '../../../assets/image/category/more.png';
 import { IoChevronDownSharp } from 'react-icons/io5';
 import { useState } from 'react';
 
@@ -25,18 +35,18 @@ const data = [
   { id: 2, title: '여성의류', image: woman_cloth },
   { id: 3, title: '키덜트', image: kidult },
   { id: 4, title: '가전제품', image: computer },
-  { id: 5, title: '도서', image: book },
+  { id: 5, title: '도서제품', image: book },
   { id: 6, title: '유아용품', image: baby },
-  { id: 7, title: '굿즈', image: man_cloth },
-  { id: 8, title: '식품', image: man_cloth },
-  { id: 9, title: '뷰티', image: man_cloth },
-  { id: 10, title: '반려용품', image: man_cloth },
-  { id: 11, title: '가구', image: man_cloth },
-  { id: 12, title: '스포츠', image: man_cloth },
-  { id: 13, title: '생활용품', image: man_cloth },
-  { id: 14, title: '식물', image: man_cloth },
-  { id: 15, title: '악세사리', image: man_cloth },
-  { id: 16, title: '기타', image: man_cloth },
+  { id: 7, title: '굿즈', image: goods },
+  { id: 8, title: '식품', image: food },
+  { id: 9, title: '뷰티', image: beauty },
+  { id: 10, title: '반려용품', image: pet },
+  { id: 11, title: '가구', image: bed },
+  { id: 12, title: '스포츠', image: sport },
+  { id: 13, title: '생활용품', image: house },
+  { id: 14, title: '식물', image: plant },
+  { id: 15, title: '악세사리', image: ring },
+  { id: 16, title: '기타', image: more },
 ];
 
 export default function Categories() {
@@ -58,7 +68,7 @@ export default function Categories() {
             rightIcon={<IoChevronDownSharp />}
             bg={'white'}
             border={'1px'}
-            borderColor="gray.300"
+            borderColor="gray.400"
             width={'full'}
             justifyContent="flex-start"
             textAlign="left"
@@ -109,7 +119,7 @@ export default function Categories() {
         >
           {data.map(item => {
             return (
-              <GridItem key={item.id} w="100%" h="10">
+              <GridItem key={item.id} w="100%" h="10" cursor={'pointer'}>
                 <Flex align="center">
                   <img src={item.image} alt="남성의류 로고" className="w-8 lg:w-9 xl:w-10 mr-2" />
                   <span className="flex-shrink-0 text-sm lg:text-md">{item.title}</span>
