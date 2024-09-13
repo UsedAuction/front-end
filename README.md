@@ -1,5 +1,12 @@
 # 🛍️ 중고 물품 경매 프로젝트 - 땅땅땅!
 
+<br>
+
+## vercel 유료 배포 정책 때문에 개인 레포지토리에서 작업 후 팀 레포지토리로 복사 하였습니다. 
+[작업을 진행한 레포지토리 Link](https://github.com/Oh-Donghan/front-end).
+
+<br>
+
 ## 😎 조원 소개
 
 <table>
@@ -43,3 +50,4 @@
 ## Figma
 
 [Figma Link](https://www.figma.com/design/npI8dmNSIYbq44YcCzX44A/wireFrame?node-id=0-1&t=5fPLEnqY1ZSot2w7-1).
+
