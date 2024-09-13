@@ -19,8 +19,7 @@
     <td align="center"><img src="https://avatars.githubusercontent.com/u/108457670?v=4" width="70"></td>
     <td>최인영(<a href="https://github.com/choiinyoung13" target="_blank">@choiinyoung13</a>)<br>Front-End</td>
     <td align="center">팀원</td>
-      <td>와이어 프레임 제작, 메인 페이지 구현, 채팅 페이지 및 실시간 채팅 구현, 최근 본 경매 모달 구현, 경매 리스트 페이지 구현, 로그인, 회원가입, 실시간 알림 구현 </td>
-  
+      <td>와이어 프레임 제작, 메인 페이지 구현, 채팅 페이지 및 실시간 채팅 구현, 최근 본 경매 모달 구현, 경매 리스트 페이지 구현, 로그인, 회원가입, 알림 모달 및 실시간 알림 구현 </td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/156155896?v=4" width="70"></td>
