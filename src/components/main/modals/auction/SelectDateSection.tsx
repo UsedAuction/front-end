@@ -40,7 +40,7 @@ export default function SelectDateSection({ endDate, setEndDate }: SelectDateSec
             selected={endDate}
             onChange={(date: Date) => handleDateChange(date)}
             minDate={new Date()}
-            maxDate={new Date(new Date().setDate(new Date().getDate() + 7))}
+            maxDate={new Date(new Date().setDate(new Date().getDate() + 6))}
             dateFormat="yyyy/MM/dd"
             placeholderText="날짜를 선택해주세요"
             popperPlacement="bottom"
